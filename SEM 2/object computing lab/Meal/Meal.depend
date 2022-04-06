@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1616146746 source:z:\meal\meal.cpp
+	<iostream>
+	"meal.h"
+
+1616146185 z:\meal\meal.h
+	<string>
+
+1616146346 source:z:\meal\main.cpp
+	<iostream>
+	"meal.h"
+

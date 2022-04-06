@@ -1,0 +1,114 @@
+POINT HEADER:
+#include<iostream>
+using namespace std;
+class Point
+{
+    private:
+    float x_co,y_co;
+    public:
+    Point(float,float);
+    int isOrigin(Point);
+    float distance(Point);
+    float mulByInt(int,Point);
+    float add(Point);
+    int sub(Point,Point);
+    int checkQuad(Point);
+    void display(float,float,int);
+}
+POINT SOURCE:
+#include<math.h>
+#include"point.h"
+#include<iostream>
+using namespace std;
+Point::Point(float x,float y)
+{
+    this->x_co=x;
+    this->y_co=y;
+}
+int Point::isOrigin(Point p)
+{
+    if(p.x_co==0&&p.y_co==0)
+        return 0;
+    else
+        return 5;
+}
+float Point::distance(Point p)
+{
+    float d=pow(pow((p.x_co-this->x_co),2)+pow((p.y_co-this->y_co),2),0.5);
+    return d;
+}
+float Point::mulByInt(int k,Point p)
+{
+    int c=k;
+    float nx=k*p.x_co;
+    float ny=k*p.x_co;
+    p.display(nx,ny,c);
+}
+void Point::display(float x,float y,int c)
+{
+    if(c!=1)
+        cout<<"The value after multiplying ("<<this->x_co<<"and"<<this->y_co<<") with"<<c<<"is"<<x<<y<<endl;
+    else
+        cout<<"The sum is ("<<x<<","<<y<<")"<<endl;
+}
+float Point::add(Point p)
+{
+    float sx=p.x_co+this->x_co;
+    float sy=p.y_co+this->y_co;
+    p.display(sx,sy,1);
+}
+int Point::checkQuad(Point p)
+{
+    if(p.x_co==0&&p.y_co==0)
+        return 0;
+    else if(p.x_co==0&&p.y_co!=0)
+        return 20;
+    else if(p.x_co!=0&&p.y_co==0)
+        return 10;
+    else if(p.x_co>0&&p.y_co>0)
+        return 1;
+    else if(p.x_co<0&&p.y_co>0)
+        return 2;
+    else if(p.x_co<0&&p.y_co<0)
+        return 3;
+    else if(p.x_co>0&&p.y_co<0)
+        return 4;
+}
+
+MAIN
+//Class Point with Some operations using member function
+#include <iostream>
+#include "point.h"
+using namespace std;
+void disp(int);
+int main()
+{
+    Point p1(0,0),p2(3,4);
+    int c1=p1.isOrigin(p2);
+    int c2=p2.isOrigin(p1);
+    disp(c1);
+    disp(c2);
+    cout<<"The distance is "<<p1.distance(p2)<<" units"<<endl;
+    p1.add(p2);
+    int f1=p1.checkQuad(p2);
+    int f2=p2.checkQuad(p1);
+    disp(f1);
+    disp(f2);
+}
+void disp(int ch)
+{
+    if(ch==10)
+        cout<<"THe point lies on X axis"<<endl;
+    else if(ch==20)
+        cout<<"THe point lies on Y axis"<<endl;
+    else if(ch==1||ch==2||ch==3||ch==4)
+        cout<<"THe point lies on"<<ch<<"Quadrant"<<endl;
+    else if(ch==0)
+        cout<<"THe point lies on origin"<<endl;
+    else if(ch==5)
+        cout<<"THe point does not lie in origin"<<endl;
+    if(ch==20)
+        cout<<"It lies on Y axis"<<endl;
+    else if(ch==10)
+        cout<<"It lies on X axis"<<endl;
+}

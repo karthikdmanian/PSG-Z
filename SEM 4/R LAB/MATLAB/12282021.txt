@@ -1,0 +1,31 @@
+pi=3.14159265358979323846
+
+a=9
+b=3
+
+peri=2*pi*sqrt((a^2+b^2)/2)
+
+pi=3.14159265358979323846
+
+
+
+peri=@(a,b)2*pi*sqrt((a^2+b^2)/2)
+
+p=peri(9,3)
+
+eq=@ (a) peri(a,2*a)==20
+syms a
+
+solve(eq,a)
+
+pi=3.14159265358979323846
+
+
+x=pi/9
+
+rs=sin(4*x)
+ls=4*sin(x)*cos(x)-8*power(sin(x),3)*cos(x)
+
+rs=cos(2*x)
+ls=(1-power(tan(x),2))/(1+power(tan(x),2))
+

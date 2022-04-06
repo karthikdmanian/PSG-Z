@@ -1,0 +1,10 @@
+function(MD)=arith(x,a,b)
+if(x==1)
+    MD=a+b;
+if(x==2)
+    MD=a-b;
+if(x==3)
+    MD=a*b;
+if(x==4)
+    MD=a/b;
+end

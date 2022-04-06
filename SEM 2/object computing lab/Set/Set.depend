@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1616050088 source:z:\set\set.cpp
+	"set.h"
+	<iostream>
+
+1616048389 z:\set\set.h
+
+1616050171 source:z:\set\main.cpp
+	<iostream>
+	"set.h"
+

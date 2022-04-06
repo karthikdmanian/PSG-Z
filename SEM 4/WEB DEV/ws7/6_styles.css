@@ -1,0 +1,28 @@
+.top{
+    height: 100px;
+    background-color: grey;
+}
+h1{
+    text-align: center;
+}
+.right{
+
+    float: right;
+    background-color: rgb(165, 164, 164);
+}
+p{
+    border: 1px;
+}
+.super1{
+    border: 1px;
+    border-style: groove;
+
+}
+.super2{
+    border: 1px;
+    border-style: groove;
+
+}
+*{
+    padding: 0;
+}

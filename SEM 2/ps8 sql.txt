@@ -1,0 +1,81 @@
+CREATE TABLE Sailors
+(
+sailorid VARCHAR(50) PRIMARY KEY,
+sname CHAR(50),
+rating INT,
+age INT,
+CHECK(rating BETWEEN 6 and 10),
+CHECK(ASCII(sname) BETWEEN 65 and 90)
+);
+
+CREATE TABLE Boats
+(
+boatid VARCHAR(50) PRIMARY KEY,
+sname CHAR(50),
+colour CHAR(20)
+);
+
+CREATE TABLE Reserves 
+(
+sid VARCHAR(50),
+bid VARCHAR(50) ,
+day date,
+PRIMARY KEY(sid,bid,day),
+FOREIGN KEY (sid) REFERENCES Sailors(sailorid),
+FOREIGN KEY (bid) REFERENCES Boats(Boatid)
+);
+
+
+CREATE SEQUENCE s1 start with 1 increment by 1;
+CREATE SEQUENCE s2 start with 100 increment by 1;
+
+DROP SEQUENCE s2;
+DROP TABLE Boats;
+
+insert into Sailors values (s1.nextval-1,'Jack Sparrow', 10, 40);
+insert into Sailors values (s1.nextval-1,'Will Turner', 6, 26);
+insert into Sailors values (s1.nextval-1,'Horatio', 7, 24);
+insert into Sailors values (s1.nextval-1,'Gibbs', 9, 51);
+insert into Sailors values (s1.nextval-1,'Davey Jones', 10, 42);
+insert into Sailors values (s1.nextval-1,'Julius',9, 25);
+
+select * from Sailors;
+
+insert into Boats values (s2.nextval-1,'Black Pearl','black');
+insert into Boats values (s2.nextval-1,'Queen Annes Revenge', 'red');
+insert into Boats values (s2.nextval-1,'Blackbeards Delight', 'black');
+insert into Boats values (s2.nextval-1,'Redbeards Delight', 'red');
+insert into Boats values (s2.nextval-1,'Oceans Dagger', 'blue');
+insert into Boats values (s2.nextval-1,'Marine', 'blue');
+insert into Boats values (s2.nextval-1,'interlake','blue');
+
+select * from Boats;
+
+
+insert into Reserves values (2, 101, '11-FEB-2016');
+insert into Reserves (sid, bid, day) values (6, 107, '10-JUN-2016');
+insert into Reserves (sid, bid, day) values (1, 101, '10-OCT-2016');
+insert into Reserves (sid, bid, day) values (1, 101, '10-OCT-2017');
+insert into Reserves (sid, bid, day) values (1, 102, '10-OCT-2017');
+insert into Reserves (sid, bid, day) values (1, 101, '10-JUL-2017');
+insert into Reserves (sid, bid, day) values (2, 102, '11-SEP-2017');
+insert into Reserves (sid, bid, day) values (2, 102, '7-NOV-2017');
+insert into Reserves (sid, bid, day) values (3, 101, '7-NOV-2017');
+insert into Reserves (sid, bid, day) values (3, 102, '7-AUG-2017');
+insert into Reserves (sid, bid, day) values (4, 103, '19-SEP-2017');
+insert into Reserves (sid, bid, day) values (6, 104, '19-SEP-2017');
+
+select * from Reserves;
+
+
+--1
+select count(colour) from (select colour from boats where colour='black');
+
+--2
+select distinct(sid) from reserves r,boats b where (colour='green' or colour='red') and r.bid= b.boatid;
+
+--3
+select distinct sname,age from sailors where age=(select min(age) from sailors);
+
+--4
+select distinct s.* from sailors s,reserves r where r.bid=101 and s.sailorid=r.sid order by sailorid;

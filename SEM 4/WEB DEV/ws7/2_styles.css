@@ -1,0 +1,27 @@
+.p1{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    border-style: dashed;
+}
+.p2{
+    height: 100px;
+    width: 100px;
+    background-color: cyan;
+    border-style: dotted;
+}
+.p3{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border-style: groove;
+}
+.p4{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    border-style: ridge;
+}
+p{
+    border: 7px;
+}

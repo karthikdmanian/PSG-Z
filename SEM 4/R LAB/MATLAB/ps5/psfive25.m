@@ -1,0 +1,9 @@
+i=2;
+sum=0;
+while(i<=50)
+    if(~(isprime(i))==1)
+        sum=sum+i;
+    end
+    i=i+1;
+end
+disp(sum);

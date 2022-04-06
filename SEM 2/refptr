@@ -1,0 +1,8 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int x=10;
+int &refx=x;
+cout<<x<<endl<<refx<<endl<<&x<<endl<<&refx;
+}
