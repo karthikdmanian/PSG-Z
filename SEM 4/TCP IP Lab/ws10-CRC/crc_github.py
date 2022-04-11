@@ -2,7 +2,7 @@
 """
 Created on Wed Apr  6 11:42:48 2022
 
-@author: 20pw16
+@author: github
 """
 
 class CRC:
@@ -64,8 +64,8 @@ class CRC:
 
 
 
-data = '100100'
-key = '1101'
+data = '1001'
+key = '1011'
 c = CRC()
 c.encodedData(data,key)
 print('---------------')
