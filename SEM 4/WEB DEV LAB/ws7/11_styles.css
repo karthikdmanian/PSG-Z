@@ -1,0 +1,25 @@
+.relative{
+    border: 2px solid;
+    border-color: aquamarine;
+    width: 1000px;
+    height: 800px;
+}
+p{
+    font-size: 1.5em;
+    margin: 0;
+
+}
+.top_tag{
+    color: black;
+    background-color: aquamarine;
+    width: 170px;
+    /* height: 30px; */
+}
+
+.absolute{
+    border: 2px solid;
+    border-color: palevioletred;
+    margin-left: 50%;
+    width: 100px;
+    height: 80px;
+}

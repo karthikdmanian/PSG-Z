@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+    background-color: yellow;
+}
+.luffy{
+    background-color: forestgreen;
+}
+.Blackbeard{
+    background-color: maroon;
+}
+td{
+    width: 50%;
+}
+.d1{
+    width: 50%;
+    float: left;
+}
+.d2{
+    width: 50%;
+    float: right;
+}

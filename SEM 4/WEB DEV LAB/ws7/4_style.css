@@ -1,0 +1,11 @@
+p{
+    margin-top: 100px;
+    margin-left: 60%;
+    font-family: 'Times New Roman', Times, serif;
+    border-style: groove;
+    border-color: #cc99cc #99cccc #cccc99 #c9c9c9;
+    font-size: 30px;
+    border-width: 5pt 10px 2cm 1in;
+    letter-spacing: 2px;
+    text-decoration: line-through;
+}
