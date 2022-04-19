@@ -48,10 +48,8 @@ syms x n k;
 
 % 3
 L=1;
-a0=1/L*(int(pi*x,x,0,1)+int(pi*(2-x),1,2));
-an=1/L*(int(pi*x*cos(n*pi*x/L),0,1)+int(pi*(2-x)*cos(n*pi*x/L),1,2));
-bn=1/L*(int(pi*x*sin(n*pi*x/L),0,1)+int(pi*(2-x)*sin(n*pi*x/L),1,2));
+a0=1/L*[int(pi*x,x,0,1)+int(pi*(2-x),1,2)];
+an=1/L*[int(pi*x*cos(n*pi*x/L),0,1)+int(pi*(2-x)*cos(n*pi*x/L,1,2)];
+bn=1/L*[int(pi*x*sin(n*pi*x/L),0,1)+int(pi*(2-x)*sin(n*pi*x/L,1,2)];
 
 exp=[a0/2,subs(an*cos(n*x*pi/L)+bn*sin(n*x*pi/L),n,[1 2 3 4])]
-
-fplot(exp)
