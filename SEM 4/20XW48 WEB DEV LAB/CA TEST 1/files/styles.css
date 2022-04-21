@@ -1,0 +1,126 @@
+.topmost{
+    height: 25px;
+    background-color: rgba(69, 85, 221, 0.801);
+}
+
+.topmost-content{
+    padding-left: 55%;
+}
+
+.topmost-content a{
+    color: white;
+}
+
+.topmost-content input{
+    width: 100px;
+    background-color: rgba(69, 85, 221, 0.801);
+}
+
+.top{
+    height: 40px;
+    background-color: rgb(3, 48, 133);
+}
+
+.carousel{
+    /* height: 300px; */
+    padding-top: 5;
+    position: relative;
+    width: 90%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+.welcumtoMB{
+    width: 110%;
+    /* height: 300px; */
+    /* display: cover; */
+}
+
+.top-content{
+    padding-left: 60%;
+}
+
+.top-content{
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.top-content a{
+    color: aliceblue;
+}
+
+.mid-1{
+    height: 250px;
+    background-color: white;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    /* display: flex; */
+}
+
+.mid-1 img{
+    margin-left: 100%;
+    margin-top: -30%;
+}
+.mid-1-content-1{
+    margin-left: 3em;
+    width: 50%;
+}
+
+.mid-1-content-1 h2{
+    color: rgb(3, 48, 133);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mid-1-content-1 p{
+    margin-left: 3.1em;
+    float: left;
+}
+
+.mid-1-content-1 button{
+    height: 40px;
+    width: 180px;
+    background-color: rgb(3, 48, 133);
+    color: white;
+    margin-left: 3.1em;
+}
+
+.mid-2{
+    height: 150px;
+    text-align: center;
+    background-color: rgb(3, 48, 133);
+    color: white;
+}
+
+.mid-2 h1{
+    padding-top: 30px;
+    text-align: center;
+}
+
+.mid-2 p{
+    text-align: center;
+}
+
+.bottom-content{
+    width: 50%;
+}
+
+.bottom-content h3{
+    color: rgb(3, 48, 133);
+}
+
+.bottom-content input{
+    height: 30px;
+    width: 280px;
+    background-color: rgb(90, 90, 153);
+}
+
+.bottom-content img{
+    margin-left: 110%;
+    margin-top: -45%;
+    height: 70%;
+    width: 70%;
+}
+
