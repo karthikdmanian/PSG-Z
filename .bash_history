@@ -5,3 +5,4 @@ git pull
 ls
 nano sample.txt
 git pull
+git pull
