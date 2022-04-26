@@ -110,11 +110,41 @@ syms x n k;
 
 % 5
 % i
-L=pi;
-a0=2/L*(int(x,x,0,pi/2)+int(pi/2,x,pi/2,pi));
-an=2/L*(int((x)*cos(n*pi*x/L),0,pi/2)+int((pi/2)*cos(n*pi*x/L),pi/2,pi));
-bn=2/L*(int((x)*sin(n*pi*x/L),0,pi/2)+int((pi/2)*sin(n*pi*x/L),pi/2,pi));
-halfCosine=[a0/2,subs(an*cos(n*x*pi/L),n,[1 2 3 4])];
-halfSine=[subs(bn*cos(n*x*pi/L),n,[1 2 3 4 5])];
-fplot(sum(halfCosine))
-fplot(sum(halfSine))
+% L=pi;
+% a0=2/L*(int(x,x,0,pi/2)+int(pi/2,x,pi/2,pi));
+% an=2/L*(int((x)*cos(n*pi*x/L),0,pi/2)+int((pi/2)*cos(n*pi*x/L),pi/2,pi));
+% bn=2/L*(int((x)*sin(n*pi*x/L),0,pi/2)+int((pi/2)*sin(n*pi*x/L),pi/2,pi));
+% halfCosine=[a0/2,subs(an*cos(n*x*pi/L),n,[1 2 3 4])];
+% halfSine=[subs(bn*cos(n*x*pi/L),n,[1 2 3 4 5])];
+% % fplot(sum(halfCosine),[0 pi])
+% fplot(sum(halfSine), [0 pi])
+% 
+% f=piecewise(0<x<pi/2,x,pi/2<x<pi,pi/2)
+% fplot(f)
+
+% ii
+% L=pi;
+% a0=2/L*(int(x,x,0,pi/2)+int(pi-x,x,pi/2,pi));
+% an=2/L*(int((x)*cos(n*pi*x/L),0,pi/2)+int((pi-x)*cos(n*pi*x/L),pi/2,pi));
+% bn=2/L*(int((x)*sin(n*pi*x/L),0,pi/2)+int((pi-x)*sin(n*pi*x/L),pi/2,pi));
+% halfCosine=[a0/2,subs(an*cos(n*x*pi/L),n,[1 2 3 4])];
+% halfSine=[subs(bn*cos(n*x*pi/L),n,[1 2 3 4 5])];
+% % fplot(sum(halfCosine),[0 pi])
+% % fplot(sum(halfSine), [0 pi])
+% 
+% f=piecewise(0<x<pi/2,x,pi/2<x<pi,pi-x)
+% fplot(f)
+
+% iii
+% L=4;
+% a0=2/L*(int(0,x,0,2)+int(1,x,2,4));
+% an=2/L*(int((0)*cos(n*pi*x/L),x,0,2)+int(1*cos(n*pi*x/L),2,4));
+% bn=2/L*(int((0)*sin(n*pi*x/L),x,0,2)+int(2*sin(n*pi*x/L),2,4));
+% halfCosine=[a0/2,subs(an*cos(n*x*pi/L),n,[1 2 3 4])];
+% halfSine=[subs(bn*cos(n*x*pi/L),n,[1 2 3 4 5])];
+% 
+% % fplot(sum(halfCosine),[0 4])
+% % fplot(sum(halfSine), [0 4])
+% 
+% f=piecewise(0<x<2,0,2<x<4,1);
+% fplot(f)
