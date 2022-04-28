@@ -7,3 +7,4 @@ nano sample.txt
 git pull
 git pull
 git push
+git pull
