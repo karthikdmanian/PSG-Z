@@ -32,39 +32,97 @@
   <div class="col-12">
     <label for="inputAddress" class="form-label">Address</label>
     <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-  </div>
-  <div class="col-12">
-    <label for="inputAddress2" class="form-label">Address 2 <span class="optional">(Optional)</span></label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, or suite">
-  </div>
-  <div class="col-md-6">
-    <label for="inputCity" class="form-label">Country</label>
-    <input type="text" class="form-control" id="inputCity">
-  </div>
-  <div class="col-md-4">
-    <label for="inputState" class="form-label">State</label>
-    <select id="inputState" class="form-select">
-      <option selected>Choose...</option>
-      <option>...</option>
-    </select>
-  </div>
-  <div class="col-md-2">
-    <label for="inputZip" class="form-label">Zip</label>
-    <input type="text" class="form-control" id="inputZip">
-  </div>
-  <div class="col-12">
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">
-        Shipping address is same as my billing address
-      </label><br>
-      <input class="form-check-input" type="checkbox" id="gridCheck">
-      <label class="form-check-label" for="gridCheck">
-        Save this information for next time
-      </label>
+
+    <div class="col">
+        <div class="row">
+      <div class="col-sm">
+        <label class="form-label">First Name</label>
+        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+      </div>
+      <div class="col-sm">
+          <label class="form-label">Last Name</label>
+        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+      </div>
     </div>
-  </div>
-  <div class="d-grid gap-2" style="padding:20px">
-    <button type="submit" class="btn btn-primary">Continue To Checcout</button>
-  </div>
-</form>
+    <br>
+    <div class="mb-3">
+      <label for="formGroupExampleInput" class="form-label">Username</label>
+      <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+    </div>
+    
+    
+    
+    <!--after username-->
+    <form class="row g-3">
+      <div class="col">
+        <label for="inputEmail4" class="form-label">Email <span class="optional">(Optional)</span></label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Password</label>
+        <input type="password" class="form-control" id="inputPassword4">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">Address 2 <span class="optional">(Optional)</span></label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, or suite">
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">Country</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">State</label>
+        <select id="inputState" class="form-select">
+          <option selected>Choose...</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label for="inputZip" class="form-label">Zip</label>
+        <input type="text" class="form-control" id="inputZip">
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Shipping address is same as my billing address
+          </label><br>
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Save this information for next time
+          </label>
+        </div>
+      </div>
+      <hr>
+      <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+          <label class="form-check-label" for="flexRadioDefault2">
+            Credit Card
+          </label>
+     </div>
+      <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Debit Card
+          </label>
+      </div>
+      <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            PayPal
+          </label>
+      </div>
+        
+      <div class="d-grid gap-2" style="padding:20px">
+        <button type="submit" class="btn btn-primary">Continue To Checcout</button>
+      </div>
+    </form>
+    </div>
+
