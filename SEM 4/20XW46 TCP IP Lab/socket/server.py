@@ -22,6 +22,7 @@ def handle_client(conn,addr):
             msg=conn.recv(msg_length).decode('utf-8') #bytes of message to be received
             if msg==DISCONNECT_MESSAGE:
                 connected=False
+                
 
             print(f"{addr} : {msg}")
 
