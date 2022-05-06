@@ -163,29 +163,29 @@ syms x n k;
 % fplot(f);
 
 % ii
-% L=pi;
-% a0=2/L*(int(x,x,0,pi/2)+int(pi-x,x,pi/2,pi));
-% an=2/L*(int((x)*cos(n*pi*x/L),0,pi/2)+int((pi-x)*cos(n*pi*x/L),pi/2,pi));
-% bn=2/L*(int((x)*sin(n*pi*x/L),0,pi/2)+int((pi-x)*sin(n*pi*x/L),pi/2,pi));
-% halfCosine=[a0/2,subs(an*cos(n*x*pi/L),n,[1 2 3 4])];
-% halfSine=[subs(bn*sin(n*x*pi/L),n,[1 2 3 4 5])];
-% fplot(sum(halfCosine),[0 pi])
+L=pi;
+a0=2/L*(int(x,x,0,pi/2)+int(pi-x,x,pi/2,pi));
+an=2/L*(int((x)*cos(n*pi*x/L),0,pi/2)+int((pi-x)*cos(n*pi*x/L),pi/2,pi));
+bn=2/L*(int((x)*sin(n*pi*x/L),0,pi/2)+int((pi-x)*sin(n*pi*x/L),pi/2,pi));
+halfCosine=[a0/2,subs(an*cos(n*x*pi/L),n,[1 2 3 4])];
+halfSine=[subs(bn*sin(n*x*pi/L),n,[1 2 3 4 5])];
+fplot(sum(halfCosine),[0 pi])
 % 
 % 
-% % fplot(sum(halfCosine(1)),[0 pi],'red'); %fourier  plot
-% % hold on;
-% % fplot(sum(halfCosine(1:2)),[0 pi],'red'); %fourier  plot
-% % hold on;
-% % fplot(sum(halfCosine(1:3)),[0 pi],'green'); %fourier  plot
-% % hold on;
-% % fplot(sum(halfCosine(1:4)),[0 pi],'yellow'); %fourier  plot
-% % hold on;
-% % fplot(sum(halfCosine(1:5)),[0 pi],'black'); %fourier  plot
-% 
-% % fplot(sum(halfSine), [0 pi])
-% 
-% f=piecewise(0<x<pi/2,x,pi/2<x<pi,pi-x)
-% fplot(f)
+% fplot(sum(halfCosine(1)),[0 pi],'red'); %fourier  plot
+% hold on;
+% fplot(sum(halfCosine(1:2)),[0 pi],'red'); %fourier  plot
+% hold on;
+% fplot(sum(halfCosine(1:3)),[0 pi],'green'); %fourier  plot
+% hold on;
+% fplot(sum(halfCosine(1:4)),[0 pi],'yellow'); %fourier  plot
+% hold on;
+% fplot(sum(halfCosine(1:5)),[0 pi],'black'); %fourier  plot
+
+% fplot(sum(halfSine), [0 pi])
+
+f=piecewise(0<x<pi/2,x,pi/2<x<pi,pi-x)
+fplot(f)
 
 % iii
 % L=4;
