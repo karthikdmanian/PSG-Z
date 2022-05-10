@@ -16,3 +16,6 @@ git status
 git push
 git commit -m "R lab 1 complete"
 git push
+git add .
+git commit -m "lpSolve docs"
+git push
