@@ -19,3 +19,13 @@ git push
 git add .
 git commit -m "lpSolve docs"
 git push
+git add .
+git commit -m "5.r complete"
+git push
+git status
+ git config --global --add safe.directory '%(prefix)///CSSERV/20PW16/'
+git status
+git add .
+git push
+git pull
+git push
