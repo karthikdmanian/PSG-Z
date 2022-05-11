@@ -49,20 +49,11 @@ def handle_client(conn,addr,data):
         http_pos = url.find("://")
         # print(f"This is the first line {first_line}\n,This is the url {url}]n,THis is the http positrion {http_pos}")
 
-<<<<<<< HEAD
         if http_pos == -1:
             temp = url
         else:
             temp = url[(http_pos+3)]
             # print(f"Temp is the else part {temp}")
-=======
-    # temp=url
-    if http_pos == -1:
-        temp = url
-    else:
-        temp = url[(http_pos+3)]
-        print(f"Temp is the else part {temp}")
->>>>>>> 0290065b67e4fbce735e3f5a90800bde5e69cae2
 
         port_pos = temp.find(":")
 
@@ -93,7 +84,6 @@ def start():
     print(f"server is listening on {PORT}")
 
     while True:
-<<<<<<< HEAD
         try:
             conn, addr = server.accept()
             data=conn.recv(8192).decode()
@@ -105,14 +95,6 @@ def start():
             server.close()
             print("Shutting Down..")
             sys.exit(1)
-=======
-        conn, addr = server.accept()
-        data=conn.recv(8192).decode()
-        # print(f"this is the DATA {data}")
-        thread = threading.Thread(target=handle_client, args=(conn, addr, data))
-        thread.start()
-        print(f"active connectiuons = {threading.active_count() - 1}")
->>>>>>> 0290065b67e4fbce735e3f5a90800bde5e69cae2
 
 print("Server is starting...")
 start()
