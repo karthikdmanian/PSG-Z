@@ -14,8 +14,8 @@ f.dir <- c("<=",
            "<=")
 
 # Set right hand side coefficients
-f.rhs <- c(240,
-           100)
+f.rhs <- c(7,
+           5)
 
 # Final value (z)
 lp("max", f.obj, f.con, f.dir, f.rhs)
