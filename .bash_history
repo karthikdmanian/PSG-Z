@@ -29,3 +29,11 @@ git add .
 git push
 git pull
 git push
+git status
+git pull
+git push
+git add .
+git commit -m "flsm using packet tracer"
+git push
+git pull
+git status
