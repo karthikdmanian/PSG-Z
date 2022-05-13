@@ -37,3 +37,11 @@ git commit -m "flsm using packet tracer"
 git push
 git pull
 git status
+cd Z:
+git status
+git add .
+git commit -m "php try"
+git push
+git add .
+git commit -m "7r"
+git push

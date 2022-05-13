@@ -22,7 +22,7 @@ def proxy_server(webserver,port,conn,data,addr):
         while True:
             reply = server.recv(8192)
 
-            if reply:
+            if len(reply)>0:
                 conn.send(reply)
                 # print(reply)
 
