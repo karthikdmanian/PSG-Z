@@ -20,8 +20,14 @@ f.rhs <- c(2000,
            9,
            11)
 
-# Final value (z)
+# Final value (z) (decimal)
 lp("min", f.obj, f.con, f.dir, f.rhs)
 
 # Variables final values
 lp("min", f.obj, f.con, f.dir, f.rhs)$solution
+
+# Final value (z) (integer)
+lp("min", f.obj, f.con, f.dir, f.rhs,int.vec=1:2)
+
+# Variables final values
+lp("min", f.obj, f.con, f.dir, f.rhs,int.vec=1:2)$solution

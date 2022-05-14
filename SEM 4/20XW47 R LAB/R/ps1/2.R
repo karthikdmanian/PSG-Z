@@ -21,9 +21,9 @@ f.rhs <- c(24,
            18,
 	     24)
 
-# Final value (z)
-lp("min", f.obj, f.con, f.dir, f.rhs)
+# Final value (z) int.vec is to specify the answer in integer.
+lp("min", f.obj, f.con, f.dir, f.rhs,int.vec=1:2)
 
 # Variables final values
-lp("min", f.obj, f.con, f.dir, f.rhs)$solution
+lp("min", f.obj, f.con, f.dir, f.rhs,int.vec=1:2)$solution
 

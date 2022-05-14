@@ -32,8 +32,14 @@ f.rhs <- c(8000,
 		5,
 		1800)
 
-# Final value (z)
+# Final value (z) (decimal)
 lp("max", f.obj, f.con, f.dir, f.rhs)
 
 # Variables final values
 lp("max", f.obj, f.con, f.dir, f.rhs)$solution
+
+# Final value (z) (integer)
+lp("max", f.obj, f.con, f.dir, f.rhs,int.vec=1:4)
+
+# Variables final values
+lp("max", f.obj, f.con, f.dir, f.rhs,int.vec=1:4)$solution
