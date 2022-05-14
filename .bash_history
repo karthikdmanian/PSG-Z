@@ -49,3 +49,9 @@ git add .
 git commmit -m "vlsm"
 git commit -m "vlsm"
 git push
+git status
+git add .
+git commit -m "R lab ws1 complete"
+git push
+git status
+git log
