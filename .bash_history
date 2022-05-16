@@ -65,3 +65,12 @@ git add .
 git commit -m "subnetting complete + php"
 git push
 git status
+git status
+git pull
+git status
+git add .
+git commit -m "changes"
+git status
+git push 
+git status
+git log

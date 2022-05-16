@@ -1,9 +1,9 @@
-syms y(x)
-%yp=diff(y,x)
-%ypp=diff(y,x,2);
-%eqn=ypp+(4*i+1)*yp+y==0;
-%cond=[y(0)==1,yp(0)];
-%sol=dsolve(eqn,cond)
+% syms y(x) i
+% yp=diff(y,x)
+% ypp=diff(y,x,2);
+% eqn=ypp+(4*i+1)*yp+y==0;
+% cond=[y(0)==1,yp(0)==0];
+% sol=dsolve(eqn,cond)
 
 %8
 
@@ -15,12 +15,12 @@ syms y(x)
 
 %9
 
-%yp=diff(y,x);
-%ypp=diff(y,x,2);
-%yppp=diff(y,x,3);
-%eqn=yppp==y-x*yp+4*ypp;
-%cond=[y(2)==1,yp(2)==1/2,ypp(2)==0];
-%sol=dsolve(eqn,cond)
+yp=diff(y,x);
+ypp=diff(y,x,2);
+yppp=diff(y,x,3);
+eqn=yppp==y-x*yp+4*ypp;
+cond=[y(2)==1,yp(2)==1/2,ypp(2)==0];
+sol=dsolve(eqn,cond)
 
 %1
 %yp=diff(y,x);
