@@ -60,3 +60,8 @@ git status
 git commit -m "ps14 subnetting complete"
 git push
 git pull
+git status
+git add .
+git commit -m "subnetting complete + php"
+git push
+git status
