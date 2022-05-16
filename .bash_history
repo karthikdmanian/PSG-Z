@@ -55,3 +55,8 @@ git commit -m "R lab ws1 complete"
 git push
 git status
 git log
+git add .
+git status
+git commit -m "ps14 subnetting complete"
+git push
+git pull
