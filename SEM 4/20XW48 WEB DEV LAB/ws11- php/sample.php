@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-<?php
-$txt = "PHP";
-echo "I love $txt!";
-?>
-=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,4 +25,3 @@ echo "I love $txt!";
 <body>
 </body>
 </html>
->>>>>>> afa9477bcc737dde2427b8ea0fa07faa5743c9a0
