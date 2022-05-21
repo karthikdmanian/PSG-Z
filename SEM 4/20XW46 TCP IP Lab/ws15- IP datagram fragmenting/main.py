@@ -35,15 +35,19 @@ print(eth_frags)
 
 #wan frags
 wan_frags=[]
-for i in eth_frags:
-    if(i>MTU_WAN):
-        temp=fragment(math.ceil(i/MTU_WAN),MTU_WAN,HEADER,i)
+for datagram_size in eth_frags:
+    if(datagram_size>MTU_WAN):
+        temp=fragment(math.ceil(datagram_size/MTU_WAN),MTU_WAN,HEADER,datagram_size)
         for j in temp:
             wan_frags.append(j)
     else:
-        wan_frags.append(i)
-        
-print(wan_frags)
+        wan_frags.append(datagram_size)
+
+# TL calc
+TL=[]
+for i in wan_frags:
+    TL.append(i+20)
+print(f"TL of the frags: {TL}")
 
 #mf, offset
 mf=[]

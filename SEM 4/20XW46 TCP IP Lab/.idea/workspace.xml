@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8f4c7f8a-982d-435b-aead-716cbbe1a4bc" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../20XW48 WEB DEV LAB/ws11- php/4.php" beforeDir="false" afterPath="$PROJECT_DIR$/../20XW48 WEB DEV LAB/ws11- php/4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../20XW48 WEB DEV LAB/ws11- php/sample.php" beforeDir="false" afterPath="$PROJECT_DIR$/../20XW48 WEB DEV LAB/ws11- php/sample.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ws15- IP datagram fragmenting/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/ws15- IP datagram fragmenting/client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ws15- IP datagram fragmenting/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ws15- IP datagram fragmenting/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ws15- IP datagram fragmenting/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/ws15- IP datagram fragmenting/server.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +45,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Python.client">
+  <component name="RunManager" selected="Python.main">
     <configuration name="client" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="20XW46 TCP IP Lab" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -152,9 +153,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.client" />
         <item itemvalue="Python.server (2)" />
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.server (1)" />
         <item itemvalue="Python.server" />
       </list>

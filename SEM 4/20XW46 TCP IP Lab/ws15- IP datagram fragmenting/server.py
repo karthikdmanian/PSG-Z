@@ -1,42 +1,22 @@
 import socket
-import threading
+import time
 import pickle
 
 
-HEADER=64
-PORT=8500
-SERVER = socket.gethostbyname(socket.gethostname())
+HEADERSIZE = 10
 
-ADDR = (SERVER,PORT)
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.bind((socket.gethostname(), 1243))
+s.listen(5)
 
-server=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+while True:
 
-server.bind(ADDR)
+    clientsocket, address = s.accept()
+    print(f"Connection from {address} has been established.")
 
-def handle_client(conn,addr):
-    
-    print(f"Client connected.{addr}")
+    d = {1:"hi", 2: "there"}
+    msg = pickle.dumps(d)
+    msg = bytes(f"{len(msg):<{HEADERSIZE}}", 'utf-8')+msg
+    print(msg)
+    clientsocket.send(msg)
 
-    connected=True
-    while connected:
-        msg=conn.recv(1024).decode()
-
-        print(f"This is the message received : {msg} .")
-
-        server.send(msg)
-
-
-    conn.close() 
-
-def start():
-
-    server.listen()
-    print(f"the server is listening. . .")
-    while True:
-        conn, addr= server.accept()
-        thread = threading.Thread(target=handle_client,args=(conn,addr))
-        thread.start()
-        print(f"active connectiuons = {threading.active_count()-1}")
-
-print("The server is starting..")
-start()

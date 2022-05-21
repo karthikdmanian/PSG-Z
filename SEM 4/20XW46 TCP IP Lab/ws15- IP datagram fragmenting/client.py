@@ -1,31 +1,30 @@
 import socket
+import pickle
 
-HEADER = 64 #to receive message sizing every message at recv() to 64 and padding it
-PORT = 8500
-SERVER = socket.gethostbyname(socket.gethostname()) #getting the IP address
+HEADERSIZE = 10
 
-ADDR=(SERVER,PORT)
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.connect((socket.gethostname(), 1243))
 
-client=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-client.connect(ADDR)
+while True:
+    full_msg = b''
+    new_msg = True
+    while True:
+        msg = s.recv(16)
+        if new_msg:
+            print("new msg len:",msg[:HEADERSIZE])
+            msglen = int(msg[:HEADERSIZE])
+            new_msg = False
 
-def send(msg):
-    # message =msg.encode('utf-8')
-    # msg_length = len(message)
-    # send_length = str(msg_length).encode('utf-8')
-    # send_length+= b' ' * (HEADER - len(send_length))
-    # client.send(send_length)
-    # client.send(message)
-    # ret_msg=client.recv(HEADER).decode('utf-8')
-    # print(ret_msg)
+        print(f"full message length: {msglen}")
 
-    client.send(msg.encode('utf-8'))
+        full_msg += msg
 
-    ret_msg=client.recv(1024).decode('utf-8')
+        print(len(full_msg))
 
-    
-    print(d)
-
-send("helloo")
-send("warudoooo")
-send("bye")
+        if len(full_msg)-HEADERSIZE == msglen:
+            print("full msg recvd")
+            print(full_msg[HEADERSIZE:])
+            print(pickle.loads(full_msg[HEADERSIZE:]))
+            new_msg = True
+            full_msg = b""
