@@ -81,3 +81,12 @@ cd
 grep
 sh
 git log
+git status
+git pull
+git push
+git add .
+git status
+git commit -m "changes
+git commit -m "changes"
+git push
+git push
