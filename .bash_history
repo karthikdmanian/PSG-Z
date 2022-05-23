@@ -74,3 +74,10 @@ git status
 git push 
 git status
 git log
+git add .
+git commit -m "changes"
+git push
+cd
+grep
+sh
+git log
