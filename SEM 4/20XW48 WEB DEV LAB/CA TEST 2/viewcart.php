@@ -34,5 +34,9 @@ $sum=0;
          echo "<br><br>The Total:";
          echo $sum;
     ?>
+
+    <form method="POST" action="index.php">
+      <input type="submit" value="place order">
+    </form>
 </body>
 </html>

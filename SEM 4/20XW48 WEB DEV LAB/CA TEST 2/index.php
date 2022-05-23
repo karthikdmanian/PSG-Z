@@ -1,4 +1,3 @@
-
 <?php
 	
 	$host = '10.1.67.156';
@@ -27,7 +26,7 @@
 	// } else {
 	// 	echo "Error creating table: " . mysqli_error($conn);
 	// }
-
+    
 
 	
   ?>
