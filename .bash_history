@@ -90,3 +90,6 @@ git commit -m "changes
 git commit -m "changes"
 git push
 git push
+git add .
+git commit -m "changes"
+git push
