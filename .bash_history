@@ -93,3 +93,7 @@ git push
 git add .
 git commit -m "changes"
 git push
+git add .
+git status
+git commit -m "CA TEST 2"
+git push
