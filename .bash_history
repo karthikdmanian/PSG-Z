@@ -97,3 +97,9 @@ git add .
 git status
 git commit -m "CA TEST 2"
 git push
+cd z:
+git status
+git add .
+git pull
+git commit -m "changes"
+git push
