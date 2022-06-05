@@ -74,3 +74,32 @@ git status
 git push 
 git status
 git log
+git add .
+git commit -m "changes"
+git push
+cd
+grep
+sh
+git log
+git status
+git pull
+git push
+git add .
+git status
+git commit -m "changes
+git commit -m "changes"
+git push
+git push
+git add .
+git commit -m "changes"
+git push
+git add .
+git status
+git commit -m "CA TEST 2"
+git push
+cd z:
+git status
+git add .
+git pull
+git commit -m "changes"
+git push
