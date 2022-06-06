@@ -103,3 +103,10 @@ git add .
 git pull
 git commit -m "changes"
 git push
+git add .
+ git status
+git add .
+git status
+git add .
+git commit -m "r 2nd ws"
+git push
