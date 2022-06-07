@@ -12,6 +12,6 @@ col.signs <- rep(">=", 3)
 col.rhs <- c(50,30,20)
 
 # Run
-lptrans <- lp.transport(costs, "min", row.signs, row.rhs, col.signs, col.rhs)
+lptrans <- lp.transport(costs, "max", row.signs, row.rhs, col.signs, col.rhs)
 lptrans$solution
 lptrans$objval

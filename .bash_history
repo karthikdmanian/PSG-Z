@@ -110,3 +110,13 @@ git status
 git add .
 git commit -m "r 2nd ws"
 git push
+cd z:
+ls
+git status
+git pull
+git push
+git push
+git add .
+git commit -m "r ps3
+"
+git push
