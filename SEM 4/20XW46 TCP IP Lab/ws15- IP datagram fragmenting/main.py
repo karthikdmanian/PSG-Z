@@ -64,5 +64,6 @@ for i in range(0,len(wan_frags)):
         offset.append(0)
     else:
         offset.append(sum(wan_frags[0:i])/8)
-        
+
+
 print(f"THe MF IS {mf}\noffset is {offset}.")
