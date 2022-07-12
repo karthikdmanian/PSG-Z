@@ -129,3 +129,9 @@ git push
 git pull
 git push
 git add .
+git status
+git add .
+git status
+git commit -m "sem 5"
+git push
+git status
