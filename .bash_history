@@ -120,3 +120,12 @@ git add .
 git commit -m "r ps3
 "
 git push
+git pull
+git add .
+git commit -m "rps3"
+git push'
+git push
+git push
+git pull
+git push
+git add .
