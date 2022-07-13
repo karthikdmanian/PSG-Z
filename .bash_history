@@ -135,3 +135,6 @@ git status
 git commit -m "sem 5"
 git push
 git status
+git add .
+git commit -m "ws1 half"
+git push
