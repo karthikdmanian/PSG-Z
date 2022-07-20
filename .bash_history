@@ -138,3 +138,7 @@ git status
 git add .
 git commit -m "ws1 half"
 git push
+git pull
+git add .
+git commit -m "java 2 remaining"
+git push

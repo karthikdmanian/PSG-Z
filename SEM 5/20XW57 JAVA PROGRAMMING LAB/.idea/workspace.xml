@@ -3,12 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="3c568a62-315d-4d3a-a4a8-808bfddcfb80" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../../.bash_history" beforeDir="false" afterPath="$PROJECT_DIR$/../../.bash_history" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/playing with java.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../20XW58 MACHINE LEARNING LAB/ws1/iris.py" beforeDir="false" afterPath="$PROJECT_DIR$/../20XW58 MACHINE LEARNING LAB/ws1/iris.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../20XW58 MACHINE LEARNING LAB/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../20XW58 MACHINE LEARNING LAB/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../20XW58 MACHINE LEARNING LAB/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../20XW58 MACHINE LEARNING LAB/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../20XW58 MACHINE LEARNING LAB/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../20XW58 MACHINE LEARNING LAB/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../20XW58 MACHINE LEARNING LAB/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../20XW58 MACHINE LEARNING LAB/20XW58 MACHINE LEARNING LAB.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../20XW58 MACHINE LEARNING LAB/src/com/company/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +92,11 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ws1" />
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
