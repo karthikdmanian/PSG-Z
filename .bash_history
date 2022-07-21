@@ -142,3 +142,6 @@ git pull
 git add .
 git commit -m "java 2 remaining"
 git push
+git add .
+git commit -m "iris plots completed"
+git push
