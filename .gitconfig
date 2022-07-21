@@ -2,3 +2,6 @@
 	recentrepo = Z:/
 [safe]
 	directory = %(prefix)///CSSERV/20PW16/
+[user]
+	name = karthikowo
+	email = 20pw16@psgtech.ac.in
