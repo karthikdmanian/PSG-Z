@@ -145,3 +145,17 @@ git push
 git add .
 git commit -m "iris plots completed"
 git push
+git add .
+git commit -m "Testing"
+git push
+git add .
+git status
+git commit -m "testing"
+git config --global user.name "karthikowo"
+git config --global user.email "20pw16@psgtech.ac.in"
+git add .
+git commit -m "Testing"
+git push
+git pull
+git add .
+git add .
