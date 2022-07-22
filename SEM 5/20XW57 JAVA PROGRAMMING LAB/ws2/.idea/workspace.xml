@@ -32,9 +32,16 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Third">
+  <component name="RunManager" selected="Application.Sixth">
     <configuration name="LinearSearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LinearSearch" />
+      <module name="ws2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sixth" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Sixth" />
       <module name="ws2" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -56,6 +63,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Sixth" />
         <item itemvalue="Application.Third" />
         <item itemvalue="Application.second" />
         <item itemvalue="Application.LinearSearch" />

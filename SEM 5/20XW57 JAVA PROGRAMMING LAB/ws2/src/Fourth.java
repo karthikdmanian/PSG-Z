@@ -4,5 +4,9 @@ public class Fourth {
 
         //to be done
     }
-    public static  
+    public static int binarySearch(int[] arr,int elt){
+        int comp =0;
+        //cmt
+        return comp;
+    }
 }
