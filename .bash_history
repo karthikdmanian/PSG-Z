@@ -159,3 +159,13 @@ git push
 git pull
 git add .
 git add .
+git add .
+git commmit -m "ws3 till3"
+git commit -m "ws3 till3"
+git add .
+git commit -m "till 6"
+git push
+kBop69() clear
+clear
+git push
+git push
