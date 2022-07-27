@@ -169,3 +169,14 @@ kBop69() clear
 clear
 git push
 git push
+git add .
+git status
+git pull
+git pull -f
+git add .
+git status
+git commit -m "Ml"
+git push
+git pull ...
+git pull --verbose
+git push
