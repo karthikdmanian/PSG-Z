@@ -180,3 +180,7 @@ git push
 git pull ...
 git pull --verbose
 git push
+git push
+git add .
+git commit -m "grad descent"
+git push
