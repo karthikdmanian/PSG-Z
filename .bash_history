@@ -184,3 +184,6 @@ git push
 git add .
 git commit -m "grad descent"
 git push
+git pull
+cd z:
+git pull
