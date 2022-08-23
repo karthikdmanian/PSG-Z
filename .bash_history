@@ -190,3 +190,7 @@ git pull
 git add .
 git commit -m "poly reg"
 git push
+git pull
+git add .
+git commit -m "java ps4 start"
+git push
