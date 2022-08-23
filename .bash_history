@@ -187,3 +187,6 @@ git push
 git pull
 cd z:
 git pull
+git add .
+git commit -m "poly reg"
+git push
