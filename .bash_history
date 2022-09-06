@@ -204,3 +204,6 @@ git push
 git add .
 git commit -m "changes"
 git push
+git add .
+git commit -m "logistic reg"
+git push
