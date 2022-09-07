@@ -207,3 +207,7 @@ git push
 git add .
 git commit -m "logistic reg"
 git push
+git add .
+git commit -m "labtest java"
+git push
+git pull
