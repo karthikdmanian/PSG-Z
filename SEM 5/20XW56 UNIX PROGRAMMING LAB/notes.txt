@@ -1,5 +1,0 @@
-basic commands
-
-env variables 
-
-task : Display the count of files which has read permission to user
